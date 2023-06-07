@@ -1,0 +1,19 @@
+- @experiments.each do |expirement|
+  %div
+    = expirement.name
+    = expirement.conditions
+
+%table
+  %thead
+    %tr
+      %th Device-Token
+      %th DATA
+      %th expiremes
+  %tbody
+    - @experient_users.each do |experient_user|
+      %tr
+        %td= experient_user.user.device_token
+        %td= experient_user.current_value
+        %td= experient_user.experiment.name
+
+= will_paginate(@experient_users)

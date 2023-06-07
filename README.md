@@ -1,24 +1,8 @@
-# README
+# краткая инструкция 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+API:
+POST /api/v1/experient_users регистрация-участия пользователя в эксперементе (для индицикации пользователя нужно отправить в headers: Device-Token)
 
-Things you may want to cover:
+Панель контроля:
+/experient_users - все участинки и список всех эксперементов
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
